@@ -1,0 +1,30 @@
+<!-- 移动端顶部导航栏 -->
+<div class="mobile-header">
+  <div class="mobile-title">
+    <i class="fas fa-music" aria-hidden="true"></i>
+    <span>音乐播放器</span>
+  </div>
+  <button class="mobile-nav-toggle" id="navToggle" aria-label="打开菜单">
+    <i class="fas fa-bars" aria-hidden="true"></i>
+  </button>
+</div>
+<!-- 移动端菜单抽屉 -->
+<div class="mobile-drawer" id="mobileDrawer">
+  <div class="category-sidebar">
+    <div class="category-title">
+      <i class="fas fa-filter" aria-hidden="true"></i> 分类浏览
+    </div>
+    <div class="quick-actions">
+      <button class="action-btn active" id="all-songs-btn" title="显示所有歌曲" aria-pressed="true">
+        <i class="fas fa-music" aria-hidden="true"></i> 全部
+      </button>
+      <button class="action-btn" id="recent-btn" title="最近播放" aria-pressed="false">
+        <i class="fas fa-history" aria-hidden="true"></i> 最近
+      </button>
+    </div>
+    <div class="rank-list" id="rank-list-mobile">
+      <div class="loading"><i class="fas fa-spinner fa-spin" aria-hidden="true"></i> 正在加载排行榜...</div>
+    </div>
+  </div>
+</div>
+<div class="drawer-overlay" id="drawerOverlay"></div>

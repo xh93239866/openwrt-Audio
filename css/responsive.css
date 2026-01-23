@@ -1,0 +1,88 @@
+/* 平板横向（1024px以下） */
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding-top: 70px; /* 为移动端头部留出空间 */
+  }
+  .music-list {
+    max-height: calc(100vh - 480px);
+  }
+  .player-section {
+    min-height: 400px;
+  }
+  .mobile-header {
+    display: flex;
+    align-items: center;
+  }
+  .mobile-drawer, .drawer-overlay {
+    display: block;
+  }
+  .category-sidebar, #desktopRank {
+    display: none;
+  }
+  .current-track-info {
+    display: none;
+  }
+  .mobile-track-info {
+    display: block;
+  }
+}
+/* 平板纵向（768px以下） */
+@media (max-width: 768px) {
+  .search-box {
+    grid-template-columns: 1fr;
+  }
+  #search-btn, #refresh-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+  .music-item {
+    padding: 12px;
+  }
+  .music-name {
+    font-size: 15px;
+  }
+  .music-singer {
+    font-size: 13px;
+  }
+  .control-buttons {
+    gap: 15px;
+  }
+  .control-btn {
+    font-size: 20px;
+  }
+  .play-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .player-controls-container {
+    padding: 15px;
+  }
+}
+/* 手机（480px以下） */
+@media (max-width: 480px) {
+  .mobile-title {
+    font-size: 16px;
+  }
+  .music-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+  .list-title {
+    font-size: 16px;
+  }
+  .control-buttons {
+    gap: 10px;
+  }
+  .mode-buttons {
+    gap: 5px;
+  }
+  .time-display {
+    font-size: 12px;
+  }
+  #volume-slider {
+    width: 80px;
+  }
+}
